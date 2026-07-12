@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SAVESOUND PRODUCTION — Portfolio สำหรับคลินิก</title>
+<meta name="description" content="ทีมโปรดักชันที่ดูแลคอนเทนต์คลินิกครบวงจร: วางแผน ถ่าย ตัดต่อ กราฟิก แคปชัน — ทุกชิ้นเช็คตามเกณฑ์โฆษณาสถานพยาบาล" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+<style>
+/* ══════════════════════════════════════════════
+   SAVESOUND — clinic portfolio
+   editorial-medical: paper / petrol / terracotta
+   ══════════════════════════════════════════════ */
+:root {
+  --paper: #fbf8f2;
+  --card: #ffffff;
+  --ink: #17343b;
+  --ink2: #4a636a;
+  --line: #e7ded1;
+  --teal: #2e6e64;
+  --teal-soft: #e3efec;
+  --terra: #c4593a;
+  --terra-soft: #f7e6df;
+  --sand: #f2ead9;
+  --gold: #b98a2f;
+}
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Sarabun", "Leelawadee UI", "Noto Sans Thai", sans-serif;
+  font-size: 16px; line-height: 1.7;
+}
+.fd { font-family: "Kanit", "Leelawadee UI", "Noto Sans Thai", sans-serif; }
+.fm { font-family: "Space Mono", ui-monospace, monospace; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 22px; }
+section { padding: 58px 0; }
+section + section { border-top: 1px solid var(--line); }
+
+.kicker {
+  font-family: "Space Mono", monospace; font-size: 11px; letter-spacing: 0.28em;
+  color: var(--terra); text-transform: uppercase; margin-bottom: 12px;
+}
+h2 { font-family: "Kanit", sans-serif; font-size: clamp(24px, 4.5vw, 34px); font-weight: 700; line-height: 1.3; letter-spacing: 0.01em; }
+.lead { color: var(--ink2); margin-top: 12px; max-width: 620px; }
+
+/* ---------- hero ---------- */
+#hero { padding: 74px 0 64px; border-top: none; position: relative; overflow: hidden; }
+#hero::before {
+  content: ""; position: absolute; right: -140px; top: -140px; width: 420px; height: 420px;
+  border-radius: 50%; background: var(--teal-soft); z-index: 0;
+}
+#hero::after {
+  content: ""; position: absolute; right: 60px; top: 210px; width: 130px; height: 130px;
+  border-radius: 50%; background: var(--terra-soft); z-index: 0;
+}
+#hero .wrap { position: relative; z-index: 1; }
+.brandline { display: flex; align-items: center; gap: 10px; margin-bottom: 34px; }
+.brandmark {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--ink);
+  display: inline-flex; align-items: center; justify-content: center; color: var(--paper);
+  font-family: "Kanit", sans-serif; font-weight: 800; font-size: 15px;
+}
+.brandname { font-family: "Kanit", sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.04em; }
+.brandtag { font-family: "Space Mono", monospace; font-size: 10px; color: var(--ink2); letter-spacing: 0.18em; }
+h1 { font-family: "Kanit", sans-serif; font-weight: 800; font-size: clamp(34px, 7vw, 56px); line-height: 1.18; max-width: 700px; }
+h1 em { font-style: normal; color: var(--teal); position: relative; }
+h1 em::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 12px; background: var(--terra-soft); z-index: -1; }
+.hero-sub { margin-top: 20px; font-size: 17.5px; color: var(--ink2); max-width: 590px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.chip {
+  font-family: "Kanit", sans-serif; font-size: 13px; font-weight: 500;
+  border: 1.5px solid var(--ink); border-radius: 999px; padding: 6px 15px; background: var(--card);
+}
+.hero-cta { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn {
+  display: inline-block; font-family: "Kanit", sans-serif; font-weight: 600; font-size: 15.5px;
+  background: var(--ink); color: var(--paper); padding: 13px 26px; border-radius: 10px;
+  text-decoration: none; border: none; cursor: pointer;
+}
+.btn.terra { background: var(--terra); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--ink); }
+.hero-contact { font-family: "Space Mono", monospace; font-size: 12px; color: var(--ink2); }
+
+/* ---------- pain ---------- */
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin-top: 28px; }
+.pain {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+}
+.pain .no { font-family: "Space Mono", monospace; font-size: 11px; color: var(--terra); letter-spacing: 0.15em; }
+.pain h3 { font-family: "Kanit", sans-serif; font-size: 17px; font-weight: 600; margin: 6px 0 6px; }
+.pain p { font-size: 14px; color: var(--ink2); }
+.pain-punch {
+  margin-top: 26px; background: var(--ink); color: var(--paper); border-radius: 14px;
+  padding: 26px 28px; font-family: "Kanit", sans-serif; font-size: clamp(17px, 3vw, 21px);
+  font-weight: 500; line-height: 1.55;
+}
+.pain-punch b { color: #f3c98a; font-weight: 700; }
+
+/* ---------- who ---------- */
+.who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 26px; }
+.who {
+  border-radius: 14px; padding: 22px; border: 1px solid var(--line); background: var(--card);
+}
+.who.accent { background: var(--teal); color: #f2f7f5; border-color: var(--teal); }
+.who.accent .wt { color: #fff; }
+.who.accent p { color: #d7e7e2; }
+.who .wico { font-size: 26px; }
+.who .wt { font-family: "Kanit", sans-serif; font-weight: 600; font-size: 17px; margin: 8px 0 5px; }
+.who p { font-size: 14px; color: var(--ink2); }
+
+/* ---------- services ---------- */
+.svc { display: grid; grid-template-columns: 52px 1fr; gap: 18px; padding: 24px 0; border-bottom: 1px dashed var(--line); }
+.svc:last-of-type { border-bottom: none; }
+.svc .sno {
+  font-family: "Space Mono", monospace; font-weight: 700; font-size: 15px; color: var(--paper);
+  background: var(--teal); border-radius: 12px; width: 52px; height: 52px;
+  display: flex; align-items: center; justify-content: center;
+}
+.svc:nth-of-type(2) .sno { background: var(--terra); }
+.svc:nth-of-type(3) .sno { background: var(--gold); }
+.svc:nth-of-type(4) .sno { background: var(--ink); }
+.svc h3 { font-family: "Kanit", sans-serif; font-size: 19px; font-weight: 700; }
+.svc .sdesc { font-size: 14.5px; color: var(--ink2); margin-top: 4px; }
+.svc ul { margin: 10px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 7px; }
+.svc li {
+  font-size: 12.5px; font-family: "Kanit", sans-serif; background: var(--sand);
+  border-radius: 7px; padding: 4px 11px;
+}
+
+/* ---------- system ---------- */
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 12px; margin-top: 26px; }
+.pillar { border-radius: 14px; padding: 18px; color: #fff; }
+.pillar h4 { font-family: "Kanit", sans-serif; font-size: 16.5px; font-weight: 700; }
+.pillar .pct { font-family: "Space Mono", monospace; font-size: 11px; opacity: 0.85; letter-spacing: 0.1em; }
+.pillar p { font-size: 13px; margin-top: 6px; opacity: 0.94; }
+.pillar.p1 { background: var(--teal); }
+.pillar.p2 { background: #46655e; }
+.pillar.p3 { background: var(--terra); }
+.pillar.p4 { background: var(--gold); }
+.system-note {
+  margin-top: 18px; background: var(--teal-soft); border-radius: 12px; padding: 16px 20px;
+  font-size: 14px; color: var(--ink);
+}
+
+/* ---------- samples ---------- */
+.sample-block { margin-top: 30px; }
+.sample-label { font-family: "Kanit", sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 14px; }
+.storyb { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-bottom: 14px; }
+.storyb .st { font-family: "Kanit", sans-serif; font-weight: 700; font-size: 16.5px; }
+.storyb .sh { font-size: 14px; color: var(--terra); margin: 5px 0 12px; font-weight: 600; }
+.frames { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.frame { background: var(--ink); border-radius: 10px; aspect-ratio: 9/14; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 12px; }
+.frame .ftxt { color: #f5efe2; font-family: "Kanit", sans-serif; font-weight: 700; font-size: 14.5px; text-align: center; line-height: 1.45; }
+.frame .fno { position: absolute; top: 8px; left: 10px; font-family: "Space Mono", monospace; font-size: 9px; color: rgba(245,239,226,0.6); letter-spacing: 0.12em; }
+.frame .fcap { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.45); color: #ddd; font-size: 10.5px; padding: 6px 9px; line-height: 1.45; }
+.frame.f-teal { background: linear-gradient(160deg, #245b53, #17343b); }
+.frame.f-terra { background: linear-gradient(160deg, #b4502f, #6e2f1c); }
+.frame.f-dark { background: linear-gradient(160deg, #23272e, #0f1216); }
+
+/* phone mockups */
+.phones { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.phone {
+  border: 2.5px solid var(--ink); border-radius: 26px; padding: 9px; background: var(--card);
+  max-width: 230px; margin: 0 auto; width: 100%;
+}
+.phone .screen { border-radius: 18px; overflow: hidden; aspect-ratio: 9/16; display: flex; flex-direction: column; }
+.phone .pcap { text-align: center; font-size: 12px; color: var(--ink2); margin-top: 9px; font-family: "Kanit", sans-serif; }
+/* mock 1: educational */
+.m1 { background: var(--teal); color: #fff; padding: 18px 16px; }
+.m1 .mtop { font-family: "Space Mono", monospace; font-size: 8.5px; letter-spacing: 0.2em; opacity: 0.8; }
+.m1 .mbig { font-family: "Kanit", sans-serif; font-weight: 800; font-size: 21px; line-height: 1.35; margin-top: 14px; }
+.m1 .mbig span { color: #f3c98a; }
+.m1 .mfoot { margin-top: auto; display: flex; align-items: center; gap: 7px; font-size: 10px; }
+.m1 .dot { width: 18px; height: 18px; border-radius: 50%; background: #fff; color: var(--teal); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 9px; font-family: "Kanit", sans-serif; }
+.m1 .mslide { position: relative; margin-top: 14px; background: rgba(255,255,255,0.12); border-radius: 9px; padding: 9px 11px; font-size: 10.5px; line-height: 1.55; }
+/* mock 2: doctor Q&A video cover */
+.m2 { background: linear-gradient(180deg, #f4ede0 55%, #17343b 55%); padding: 16px; position: relative; }
+.m2 .avatar { width: 74px; height: 74px; border-radius: 50%; background: var(--terra-soft); border: 3px solid var(--terra); margin: 22px auto 0; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+.m2 .qa { text-align: center; font-family: "Kanit", sans-serif; font-weight: 800; color: var(--ink); font-size: 17px; margin-top: 12px; line-height: 1.4; }
+.m2 .ep { position: absolute; top: 12px; left: 14px; background: var(--terra); color: #fff; border-radius: 6px; font-family: "Kanit", sans-serif; font-size: 9.5px; padding: 3px 8px; font-weight: 600; }
+.m2 .ans { position: absolute; bottom: 16px; left: 16px; right: 16px; color: #f4ede0; font-size: 10.5px; text-align: center; line-height: 1.5; }
+.m2 .ans b { font-family: "Kanit", sans-serif; font-size: 12.5px; display: block; margin-bottom: 3px; }
+/* mock 3: price card */
+.m3 { background: #fdfbf7; padding: 16px 14px; }
+.m3 .m3head { font-family: "Kanit", sans-serif; font-weight: 700; font-size: 13.5px; color: var(--ink); }
+.m3 .m3sub { font-size: 9px; color: var(--ink2); }
+.m3 .price { background: var(--card); border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; margin-top: 8px; }
+.m3 .price .pn { font-family: "Kanit", sans-serif; font-size: 10.5px; font-weight: 600; }
+.m3 .price .pv { font-family: "Space Mono", monospace; font-size: 10px; color: var(--teal); }
+.m3 .m3foot { margin-top: auto; background: var(--ink); color: #fff; border-radius: 8px; text-align: center; font-family: "Kanit", sans-serif; font-size: 10px; padding: 7px; }
+.m3 .m3note { font-size: 7.5px; color: var(--ink2); margin-top: 6px; text-align: center; }
+
+/* ---------- calendar ---------- */
+.cal { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 13.5px; background: var(--card); border-radius: 14px; overflow: hidden; }
+.cal th { background: var(--ink); color: var(--paper); font-family: "Kanit", sans-serif; font-weight: 600; padding: 10px 12px; text-align: left; font-size: 13px; }
+.cal td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cal tr:last-child td { border-bottom: none; }
+.cal .w { font-family: "Space Mono", monospace; font-size: 10.5px; color: var(--ink2); white-space: nowrap; }
+.pill { display: inline-block; font-family: "Kanit", sans-serif; font-size: 11px; font-weight: 600; border-radius: 6px; padding: 2px 9px; color: #fff; white-space: nowrap; }
+.pill.k { background: var(--teal); } .pill.b { background: #46655e; } .pill.s { background: var(--terra); } .pill.e { background: var(--gold); }
+
+/* ---------- law ---------- */
+.law-wrap { background: var(--card); border: 1.5px solid var(--ink); border-radius: 16px; padding: 26px; margin-top: 26px; }
+.law-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; margin-top: 18px; }
+.law h4 { font-family: "Kanit", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.law ul { padding-left: 0; list-style: none; }
+.law li { font-size: 13.5px; padding: 5px 0 5px 24px; position: relative; color: var(--ink2); }
+.law li::before { position: absolute; left: 0; top: 5px; }
+.law.bad li::before { content: "✗"; color: var(--terra); font-weight: 700; }
+.law.good li::before { content: "✓"; color: var(--teal); font-weight: 700; }
+.fine {
+  margin-top: 18px; background: var(--terra-soft); border-radius: 10px; padding: 14px 18px;
+  font-size: 13.5px; color: #7c3a24;
+}
+.fine b { font-family: "Kanit", sans-serif; }
+.law-disclaim { font-size: 11.5px; color: var(--ink2); margin-top: 14px; }
+
+/* ---------- pricing ---------- */
+.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: 26px; }
+.tier { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 22px; position: relative; display: flex; flex-direction: column; }
+.tier.hot { border: 2px solid var(--terra); }
+.tier .best {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--terra); color: #fff; font-family: "Kanit", sans-serif; font-size: 11.5px;
+  font-weight: 600; border-radius: 999px; padding: 3px 14px; white-space: nowrap;
+}
+.tier h3 { font-family: "Kanit", sans-serif; font-size: 18px; font-weight: 700; }
+.tier .tprice { font-family: "Kanit", sans-serif; font-size: 30px; font-weight: 800; color: var(--teal); margin-top: 6px; }
+.tier.hot .tprice { color: var(--terra); }
+.tier .tprice small { font-size: 13px; font-weight: 500; color: var(--ink2); }
+.tier .tfor { font-size: 12.5px; color: var(--ink2); margin: 2px 0 12px; }
+.tier ul { list-style: none; padding: 0; margin: 0 0 14px; }
+.tier li { font-size: 13.5px; padding: 5px 0 5px 22px; position: relative; }
+.tier li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+.price-note { margin-top: 16px; font-size: 12.5px; color: var(--ink2); background: var(--sand); border-radius: 10px; padding: 12px 16px; }
+
+/* ---------- process ---------- */
+.steps { margin-top: 26px; }
+.step { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px dashed var(--line); }
+.step:last-child { border-bottom: none; }
+.step .sn { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--ink); font-family: "Kanit", sans-serif; font-weight: 700; display: flex; align-items: center; justify-content: center; background: var(--card); }
+.step h4 { font-family: "Kanit", sans-serif; font-size: 16.5px; font-weight: 600; }
+.step h4 small { font-family: "Space Mono", monospace; font-size: 10px; color: var(--terra); margin-left: 8px; letter-spacing: 0.1em; }
+.step p { font-size: 13.5px; color: var(--ink2); }
+
+/* ---------- metrics ---------- */
+.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 26px; }
+.metric { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.metric .mi { font-size: 21px; }
+.metric h5 { font-family: "Kanit", sans-serif; font-size: 14.5px; font-weight: 600; margin-top: 6px; }
+.metric p { font-size: 12px; color: var(--ink2); margin-top: 3px; }
+.honest { margin-top: 18px; font-size: 13.5px; color: var(--ink2); border-left: 3px solid var(--gold); padding-left: 14px; }
+
+/* ---------- faq ---------- */
+.faq { margin-top: 20px; }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; padding: 15px 0; font-family: "Kanit", sans-serif; font-weight: 600; font-size: 15.5px; list-style: none; display: flex; justify-content: space-between; gap: 14px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--terra); font-weight: 700; }
+.faq details[open] summary::after { content: "–"; }
+.faq .a { padding: 0 0 16px; font-size: 14px; color: var(--ink2); max-width: 660px; }
+
+/* ---------- cta ---------- */
+#cta { border-top: none; }
+.cta-box { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 44px 34px; text-align: center; }
+.cta-box h2 { color: #fff; }
+.cta-box p { color: #b9c7c4; margin-top: 12px; }
+.cta-box .free { color: #f3c98a; font-family: "Kanit", sans-serif; font-weight: 600; }
+.cta-contact { margin-top: 26px; display: flex; flex-direction: column; gap: 6px; align-items: center; font-family: "Kanit", sans-serif; font-size: 16px; }
+.cta-contact .fm { font-size: 12px; color: #8fa3a0; }
+footer { text-align: center; font-family: "Space Mono", monospace; font-size: 10.5px; color: var(--ink2); padding: 30px 0 44px; letter-spacing: 0.1em; }
+
+.edit-note {
+  background: #fff8dc; border: 1px dashed var(--gold); color: #7a5b13;
+  border-radius: 8px; font-size: 11.5px; padding: 6px 12px; margin-top: 10px; display: inline-block;
+}
+
+/* ---------- print ---------- */
+@media print {
+  body { background: #fff; font-size: 13px; }
+  .edit-note, .hero-cta .btn { display: none !important; }
+  section { padding: 26px 0; page-break-inside: avoid; }
+  #hero::before, #hero::after { display: none; }
+  .cta-box, .pain-punch, .pillar, .cal th, .frame, .m1, .m2, .m3 .m3foot, .svc .sno {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  a { text-decoration: none; color: inherit; }
+}
+@media (max-width: 560px) {
+  .svc { grid-template-columns: 44px 1fr; gap: 12px; }
+  .svc .sno { width: 44px; height: 44px; }
+  .cal { font-size: 12px; }
+  .cal th, .cal td { padding: 8px 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="brandmark">S</span>
+      <div>
+        <div class="brandname" data-f="name">SAVESOUND PRODUCTION</div>
+        <div class="brandtag">CONTENT · FILM · DESIGN</div>
+      </div>
+    </div>
+    <h1>คอนเทนต์ที่ทำให้คนไข้<br /><em>เลือกคลินิกของคุณ</em></h1>
+    <p class="hero-sub">
+      คนไข้ยุคนี้ตัดสินใจจากสิ่งที่เห็นในมือถือ ก่อนเดินเข้าประตูคลินิกเสมอ —
+      เราเป็นทีมโปรดักชันที่ดูแลหน้าจอนั้นให้คุณครบวงจร: <b>วางแผน ถ่าย ตัดต่อ ออกแบบกราฟิก เขียนแคปชัน</b>
+      โดยทุกชิ้นงานผ่านการตรวจตามเกณฑ์โฆษณาสถานพยาบาลก่อนส่งมอบ
+    </p>
+    <div class="chips">
+      <span class="chip">📋 วางแผนคอนเทนต์</span>
+      <span class="chip">🎬 ถ่าย + ตัดต่อวิดีโอ</span>
+      <span class="chip">🎨 ออกแบบกราฟิก</span>
+      <span class="chip">💡 ครีเอทีฟแคมเปญ</span>
+      <span class="chip">🛡 เช็คกฎ สบส. ทุกชิ้น</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn terra" href="#cta">รับ Content Audit ฟรี</a>
+      <a class="btn ghost" href="#price">ดูแพ็กเกจ</a>
+      <span class="hero-contact" data-f="contactShort">LINE @savesound · 08x-xxx-xxxx</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PAIN ══════════ -->
+<section id="pain">
+  <div class="wrap">
+    <div class="kicker">The Problem</div>
+    <h2>เรารู้ว่าทำไมเพจคลินิกส่วนใหญ่ถึงเงียบ</h2>
+    <div class="grid2">
+      <div class="pain">
+        <div class="no">01</div>
+        <h3>หมอไม่มีเวลา</h3>
+        <p>วันทั้งวันหมดไปกับการตรวจคนไข้ — ไม่มีทางนั่งคิดคอนเทนต์ ถ่ายคลิป ตัดต่อ แล้วโพสต์ให้สม่ำเสมอได้เอง</p>
+      </div>
+      <div class="pain">
+        <div class="no">02</div>
+        <h3>จ้างพนักงานทำเพจ = แพงและไม่ตรงสาย</h3>
+        <p>พนักงานประจำหนึ่งคนทำได้ไม่ครบทั้งถ่าย ตัด ออกแบบ เขียน — แต่ค่าจ้างเต็มเดือนทุกเดือน</p>
+      </div>
+      <div class="pain">
+        <div class="no">03</div>
+        <h3>โพสต์ไปก็กลัวผิดกฎ</h3>
+        <p>โฆษณาสถานพยาบาลมีกฎเข้มมาก คำว่า "ดีที่สุด" คำเดียว หรือโพสต์ลดราคาผิดวิธี ก็เสี่ยงโดนปรับได้จริง</p>
+      </div>
+      <div class="pain">
+        <div class="no">04</div>
+        <h3>บูสต์โพสต์แล้วเงียบ</h3>
+        <p>ยิงแอดใส่คอนเทนต์ที่ไม่มีใครอยากดู = เผาเงินฟรี ปัญหาไม่ใช่งบ แต่คือ "ของ" ที่เอาไปยิง</p>
+      </div>
+    </div>
+    <div class="pain-punch">
+      ในรัศมี 5 กิโลเมตรรอบคลินิกของคุณ มีคนกำลังเลื่อนฟีดหาหมออยู่ทุกคืน —
+      คำถามเดียวคือ <b>เขาจะเจอคลินิกของคุณ หรือเจอคลินิกข้างๆ</b>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WHO ══════════ -->
+<section id="who">
+  <div class="wrap">
+    <div class="kicker">Who We Are</div>
+    <h2>ทีมเล่าเรื่องที่จริงจังกับ "ทำให้คนหยุดดู"</h2>
+    <p class="lead">
+      เราคือโปรดักชันเฮาส์ที่เติบโตมาจากการทำช่องเล่าเรื่องของตัวเอง —
+      เราจึงไม่ได้แค่ "รับถ่ายรับตัด" แต่เข้าใจตั้งแต่ว่า 3 วินาทีแรกต้องมีอะไร คนถึงไม่ปัดผ่าน
+      ไปจนถึงตัวเลขหลังบ้านว่าคอนเทนต์แบบไหนเวิร์กจริง
+    </p>
+    <div class="who-grid">
+      <div class="who">
+        <div class="wico">🎥</div>
+        <div class="wt">ทำคอนเทนต์เองทุกวัน</div>
+        <p>เราบริหารช่องคอนเทนต์ของตัวเองด้วยระบบงานแบบสตูดิโอ: ขุดเรื่อง เขียนบท ถ่าย ตัด วิเคราะห์ผล วนทุกสัปดาห์ — สิ่งที่เราขายคือระบบเดียวกันนี้</p>
+      </div>
+      <div class="who">
+        <div class="wico">📱</div>
+        <div class="wt">เกิดมากับวิดีโอสั้น</div>
+        <p>TikTok, Reels, Shorts คือสนามหลักของเรา เราคิดเป็นแนวตั้ง เล่าเป็นวินาที และรู้ว่าอัลกอริทึมให้รางวัลกับอะไร</p>
+      </div>
+      <div class="who accent">
+        <div class="wico">🛡</div>
+        <div class="wt">เชี่ยวชาญกฎโฆษณาสายสุขภาพ</div>
+        <p>เราศึกษาเกณฑ์ พ.ร.บ.สถานพยาบาลฯ และประกาศที่เกี่ยวข้องอย่างจริงจัง ทุกชิ้นงานถูกตรวจก่อนส่งมอบ — จุดที่ฟรีแลนซ์ทั่วไปให้คุณไม่ได้</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">Services</div>
+    <h2>ทำอะไรให้คุณได้บ้าง</h2>
+    <div style="margin-top:10px">
+      <div class="svc">
+        <div class="sno">01</div>
+        <div>
+          <h3>Content Planning — วางแผนคอนเทนต์</h3>
+          <div class="sdesc">แผนรายเดือนที่ตอบโจทย์ธุรกิจจริง ไม่ใช่โพสต์ไปเรื่อยๆ: กำหนดเสาเนื้อหา ปฏิทินโพสต์ หัวข้อ+ฮุคของทุกชิ้น พร้อมธงกำกับข้อกฎหมายรายโพสต์</div>
+          <ul><li>ปฏิทินรายเดือน</li><li>เสาเนื้อหา 4 เสา</li><li>หัวข้อ + ฮุคทุกโพสต์</li><li>วิเคราะห์คู่แข่งในพื้นที่</li></ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="sno">02</div>
+        <div>
+          <h3>Video Production &amp; Editing — ถ่ายและตัดต่อ</h3>
+          <div class="sdesc">เข้าถ่ายถึงคลินิก กำกับให้หมอ/ทีมงานพูดเป็นธรรมชาติ แล้วตัดเป็นวิดีโอสั้นแนวตั้งที่คนดูจบ: จังหวะ ตัวหนังสือ เสียง ครบแบบช่องมืออาชีพ</div>
+          <ul><li>ถ่ายถึงที่ พร้อมไฟ+ไมค์</li><li>ตัดต่อวิดีโอสั้น 9:16</li><li>Subtitle + กราฟิกในคลิป</li><li>กำกับการพูดหน้ากล้อง</li></ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="sno">03</div>
+        <div>
+          <h3>Graphic Design — ออกแบบกราฟิก</h3>
+          <div class="sdesc">ภาพโพสต์ที่มีระบบแบรนด์เดียวกันทั้งเพจ ไม่ใช่ต่างคนต่างทำ: ชุดสี ฟอนต์ เทมเพลตประจำคลินิก ให้คนจำได้ตั้งแต่ยังไม่อ่านชื่อ</div>
+          <ul><li>เทมเพลตโพสต์ประจำคลินิก</li><li>ภาพความรู้ / carousel</li><li>ป้ายราคา-บริการแบบถูกกฎ</li><li>ปกวิดีโอ / ปก Highlight</li></ul>
+        </div>
+      </div>
+      <div class="svc">
+        <div class="sno">04</div>
+        <div>
+          <h3>Creative Campaign — แคมเปญครีเอทีฟ</h3>
+          <div class="sdesc">เมื่อต้องการมากกว่ารายเดือน: ซีรีส์คอนเทนต์ประจำคลินิก (เช่น "หมอตอบ") แคมเปญเปิดบริการใหม่ หรือรีแบรนด์เพจทั้งชุด</div>
+          <ul><li>ซีรีส์รายการประจำเพจ</li><li>แคมเปญเปิดตัวบริการ</li><li>คิดคาแรกเตอร์เพจ</li><li>ที่ปรึกษาการยิงแอด</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SYSTEM ══════════ -->
+<section id="system">
+  <div class="wrap">
+    <div class="kicker">The Clinic Content System</div>
+    <h2>สูตรคอนเทนต์ 4 เสา ที่เราใช้กับคลินิก</h2>
+    <p class="lead">คนไข้ไม่ได้อยากดูโฆษณา — เขาอยากรู้ว่า "หมอคนนี้ไว้ใจได้ไหม" ระบบ 4 เสาของเราสร้างความไว้ใจก่อน แล้วค่อยเปลี่ยนเป็นการจอง</p>
+    <div class="pillars">
+      <div class="pillar p1">
+        <div class="pct">40%</div>
+        <h4>ความรู้</h4>
+        <p>ตอบคำถามที่คนไข้เสิร์ชจริง อธิบายอาการ ไขความเชื่อผิดๆ — เสาที่สร้างความเชื่อใจและปลอดภัยทางกฎหมายที่สุด</p>
+      </div>
+      <div class="pillar p2">
+        <div class="pct">25%</div>
+        <h4>เบื้องหลัง</h4>
+        <p>พาดูคลินิก แนะนำทีม หนึ่งวันของหมอ — เปลี่ยน "คลินิกแปลกหน้า" ให้เป็น "หมอที่รู้จัก"</p>
+      </div>
+      <div class="pillar p3">
+        <div class="pct">20%</div>
+        <h4>บริการ</h4>
+        <p>อธิบายบริการ ขั้นตอน และอัตราค่าบริการอย่างตรงไปตรงมา ในรูปแบบที่ถูกเกณฑ์โฆษณา</p>
+      </div>
+      <div class="pillar p4">
+        <div class="pct">15%</div>
+        <h4>เอนเกจ</h4>
+        <p>เกาะเทรนด์แบบมีสาระ ถาม-ตอบ โหวตหัวข้อ — เสาที่พาเพจไปเจอคนใหม่ๆ</p>
+      </div>
+    </div>
+    <div class="system-note">
+      <b class="fd">จังหวะมาตรฐาน:</b> 3 โพสต์/สัปดาห์ (วิดีโอสั้น 1-2 + กราฟิก 1-2) — ความสม่ำเสมอสำคัญกว่าความถี่
+      อัลกอริทึมและคนไข้จำเพจที่ "มาตลอด" ได้เสมอ
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SAMPLES ══════════ -->
+<section id="samples">
+  <div class="wrap">
+    <div class="kicker">Sample Work</div>
+    <h2>ตัวอย่างแนวงานที่จะได้</h2>
+    <p class="lead">ตัวอย่างคอนเซ็ปต์ที่ออกแบบสำหรับคลินิกโดยเฉพาะ — เนื้อหาจริงจะถูกปรับให้ตรงกับบริการและบุคลิกของคุณหมอ</p>
+
+    <div class="sample-block">
+      <div class="sample-label">🎬 ตัวอย่างสตอรีบอร์ดวิดีโอสั้น</div>
+
+      <div class="storyb">
+        <div class="st">1) "3 สัญญาณที่ไม่ควรรอให้หายเอง" — เสาความรู้ (45 วิ)</div>
+        <div class="sh">ฮุค: "อาการแบบนี้ หลายคนคิดว่าเดี๋ยวก็หาย…"</div>
+        <div class="frames">
+          <div class="frame f-teal"><span class="fno">0:00</span><div class="ftxt">อาการแบบนี้<br />อย่ารอให้หายเอง</div><div class="fcap">หมอเปิดประเด็นหน้ากล้อง + ตัวหนังสือใหญ่</div></div>
+          <div class="frame f-dark"><span class="fno">0:08</span><div class="ftxt">สัญญาณที่ 1<br />เป็นซ้ำเกิน 2 สัปดาห์</div><div class="fcap">ตัวเลขขึ้นทีละข้อ ตามจังหวะพูด</div></div>
+          <div class="frame f-teal"><span class="fno">0:38</span><div class="ftxt">สงสัยอาการ<br />ทักถามได้ฟรี</div><div class="fcap">จอปิด: โลโก้ + LINE + เวลาทำการ</div></div>
+        </div>
+      </div>
+
+      <div class="storyb">
+        <div class="st">2) "หมอตอบ" — ซีรีส์ประจำเพจ (30 วิ/ตอน)</div>
+        <div class="sh">ฮุค: "คำถามนี้ 10 คนถาม 8 คน…"</div>
+        <div class="frames">
+          <div class="frame f-terra"><span class="fno">0:00</span><div class="ftxt">หมอตอบ EP.3<br />"จัดฟันเจ็บไหม?"</div><div class="fcap">เปิดด้วยคำถามจากคอมเมนต์จริง</div></div>
+          <div class="frame f-dark"><span class="fno">0:05</span><div class="ftxt">คำตอบสั้น:<br />เจ็บ 3 วันแรก แล้วชิน</div><div class="fcap">หมอตอบตรงๆ ก่อน แล้วค่อยขยาย</div></div>
+          <div class="frame f-terra"><span class="fno">0:25</span><div class="ftxt">มีคำถาม?<br />คอมเมนต์ไว้เลย</div><div class="fcap">ชวนถามต่อ = วัตถุดิบตอนถัดไป</div></div>
+        </div>
+      </div>
+
+      <div class="storyb">
+        <div class="st">3) "พาทัวร์คลินิก 30 วินาที" — เสาเบื้องหลัง</div>
+        <div class="sh">ฮุค: "หลายคนถามว่าข้างในเป็นยังไง วันนี้เปิดให้ดูทุกห้อง"</div>
+        <div class="frames">
+          <div class="frame f-dark"><span class="fno">0:00</span><div class="ftxt">เปิดประตู<br />คลินิกให้ดู</div><div class="fcap">เดินกล้องเข้าประตูจริง one-take</div></div>
+          <div class="frame f-teal"><span class="fno">0:10</span><div class="ftxt">ห้องตรวจ ·<br />เครื่องมือ · ทีม</div><div class="fcap">ตัดเร็วตามเพลง ทีมงานทักทาย</div></div>
+          <div class="frame f-dark"><span class="fno">0:25</span><div class="ftxt">แวะมาทักทาย<br />กันได้นะครับ</div><div class="fcap">จบที่หมอหน้าประตู + แผนที่</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sample-block">
+      <div class="sample-label">🎨 ตัวอย่างงานกราฟิก</div>
+      <div class="phones">
+        <div class="phone">
+          <div class="screen"><div class="m1" style="display:flex;flex-direction:column;height:100%">
+            <div class="mtop">คลินิกของคุณ · ความรู้</div>
+            <div class="mbig">5 สัญญาณ<br /><span>ที่ไม่ควร</span><br />ปล่อยไว้</div>
+            <div class="mslide">เลื่อนดูทีละข้อ →<br />ข้อ 3 คนมองข้ามมากที่สุด</div>
+            <div class="mfoot"><span class="dot">C</span> เพจคลินิกของคุณ</div>
+          </div></div>
+          <div class="pcap">ปก Carousel ความรู้</div>
+        </div>
+        <div class="phone">
+          <div class="screen"><div class="m2" style="height:100%">
+            <span class="ep">หมอตอบ EP.3</span>
+            <div class="avatar">🩺</div>
+            <div class="qa">"จัดฟัน<br />เจ็บไหม?"</div>
+            <div class="ans"><b>คำตอบจากหมอจริง</b>ดูจบใน 30 วินาที</div>
+          </div></div>
+          <div class="pcap">ปกซีรีส์วิดีโอ "หมอตอบ"</div>
+        </div>
+        <div class="phone">
+          <div class="screen"><div class="m3" style="display:flex;flex-direction:column;height:100%">
+            <div class="m3head">อัตราค่าบริการ</div>
+            <div class="m3sub">โปร่งใส ตรงไปตรงมา สอบถามเพิ่มได้</div>
+            <div class="price"><div class="pn">ตรวจสุขภาพช่องปาก</div><div class="pv">เริ่มต้น 900.-</div></div>
+            <div class="price"><div class="pn">ขูดหินปูน</div><div class="pv">1,200.-</div></div>
+            <div class="price"><div class="pn">ปรึกษาจัดฟัน</div><div class="pv">ไม่มีค่าใช้จ่าย</div></div>
+            <div class="m3foot">นัดคิวทาง LINE</div>
+            <div class="m3note">ราคาอาจแตกต่างตามการประเมินของทันตแพทย์</div>
+          </div></div>
+          <div class="pcap">โพสต์ราคาแบบถูกเกณฑ์</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CALENDAR ══════════ -->
+<section id="calendar">
+  <div class="wrap">
+    <div class="kicker">First Month</div>
+    <h2>หน้าตาเดือนแรกของคุณ</h2>
+    <p class="lead">ตัวอย่างปฏิทินจริงแบบ 12 โพสต์ / 4 สัปดาห์ — ทุกโพสต์ถูกคิดมาแล้วว่าอยู่เสาไหน ทำหน้าที่อะไร และต้องระวังกฎข้อไหน</p>
+    <table class="cal">
+      <thead><tr><th style="width:70px">สัปดาห์</th><th>โพสต์</th><th style="width:110px">รูปแบบ</th></tr></thead>
+      <tbody>
+        <tr><td class="w">W1</td><td><span class="pill k">ความรู้</span> 3 สัญญาณที่ไม่ควรรอให้หายเอง</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W1</td><td><span class="pill b">เบื้องหลัง</span> พาทัวร์คลินิก 30 วินาที</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W1</td><td><span class="pill e">เอนเกจ</span> ความเชื่อผิดๆ ที่หมอได้ยินบ่อยสุด</td><td>กราฟิก</td></tr>
+        <tr><td class="w">W2</td><td><span class="pill k">ความรู้</span> มาคลินิกครั้งแรก เตรียมตัวยังไง</td><td>Carousel</td></tr>
+        <tr><td class="w">W2</td><td><span class="pill b">เบื้องหลัง</span> หนึ่งวันของทีมพยาบาล</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W2</td><td><span class="pill s">บริการ</span> บริการ + อัตราค่าบริการแบบโปร่งใส</td><td>กราฟิก</td></tr>
+        <tr><td class="w">W3</td><td><span class="pill k">ความรู้</span> หมอตอบ EP.1 — คำถามยอดฮิตในห้องตรวจ</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W3</td><td><span class="pill e">เอนเกจ</span> เกาะเทรนด์แบบมีสาระ</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W3</td><td><span class="pill b">เบื้องหลัง</span> รู้จักหมอ: ทำไมถึงเลือกสายนี้</td><td>กราฟิก</td></tr>
+        <tr><td class="w">W4</td><td><span class="pill k">ความรู้</span> เช็กลิสต์ดูแลตัวเองประจำเดือน</td><td>Carousel</td></tr>
+        <tr><td class="w">W4</td><td><span class="pill s">บริการ</span> ขั้นตอนเมื่อมาถึงคลินิก ตั้งแต่หน้าประตู</td><td>วิดีโอสั้น</td></tr>
+        <tr><td class="w">W4</td><td><span class="pill e">เอนเกจ</span> สรุปเดือนแรก + โหวตหัวข้อเดือนหน้า</td><td>กราฟิก</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════ LAW ══════════ -->
+<section id="law">
+  <div class="wrap">
+    <div class="kicker">Why It Matters</div>
+    <h2>โฆษณาคลินิกมี "กับดักกฎหมาย" ที่คนทำเพจทั่วไปไม่รู้</h2>
+    <p class="lead">
+      การโฆษณาสถานพยาบาลอยู่ใต้ พ.ร.บ.สถานพยาบาล พ.ศ. 2541 (ม.38) —
+      ข้อความโฆษณาที่เกินกว่าชื่อและที่ตั้ง ต้องขออนุมัติจากผู้อนุญาต (กรม สบส. / สสจ.) ก่อนเผยแพร่
+      และมีลิสต์ข้อห้ามที่ละเอียดกว่าที่คิดมาก
+    </p>
+    <div class="law-wrap">
+      <div class="law-cols">
+        <div class="law bad">
+          <h4>ตัวอย่างที่ "ห้าม" ในโฆษณาคลินิก</h4>
+          <ul>
+            <li>"ดีที่สุด" "ที่หนึ่ง" "แห่งแรก" "ที่เดียว"</li>
+            <li>การันตีผล / "เห็นผล 100%" / "หายขาด"</li>
+            <li>ภาพ before-after ที่สื่อรับรองผลการรักษา</li>
+            <li>ผู้ป่วยหรือดารารีวิว "รับรองผล" การรักษา</li>
+            <li>โฆษณา ลด แลก แจก แถม ชิงโชค เพื่อจูงใจ</li>
+            <li>ภาพน่ากลัว เร้าอารมณ์ ขู่ให้กลัวเกินจริง</li>
+            <li>อวดอ้างเครื่องมือ/วุฒิ/บุคลากรที่ไม่มีจริง</li>
+          </ul>
+        </div>
+        <div class="law good">
+          <h4>สิ่งที่เราทำให้ทุกชิ้นงาน</h4>
+          <ul>
+            <li>ตรวจข้อความ/ภาพทุกชิ้นตามเกณฑ์ ก่อนส่งมอบ</li>
+            <li>ปรับคำเสี่ยงให้ยังขายได้ แต่โพสต์ได้จริง</li>
+            <li>โครงเนื้อหาเน้น "ให้ความรู้" ซึ่งเสี่ยงต่ำสุดโดยดีไซน์</li>
+            <li>เตรียมไฟล์+ข้อความประกอบการยื่นขออนุมัติโฆษณา (ฆสพ.)</li>
+            <li>แนะนำการแสดงเลขอนุมัติบนชิ้นงานโฆษณา</li>
+            <li>ภาพผู้ป่วย/ทีมงาน มีแบบฟอร์มยินยอมตาม PDPA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fine">
+        <b>โทษตามกฎหมาย:</b> โฆษณาโดยไม่ได้รับอนุมัติ ปรับไม่เกิน 20,000 บาท ·
+        โฆษณาเท็จ/โอ้อวดเกินจริง จำคุกไม่เกิน 1 ปี หรือปรับไม่เกิน 20,000 บาท
+        และปรับต่อเนื่องอีก <b>วันละไม่เกิน 10,000 บาท</b> จนกว่าจะระงับโฆษณา
+      </div>
+      <div class="law-disclaim">
+        * ข้อมูลสรุปเพื่อความเข้าใจ ไม่ใช่คำปรึกษาทางกฎหมาย — การยื่นขออนุมัติโฆษณาเป็นสิทธิ์และหน้าที่ของผู้รับอนุญาตสถานพยาบาล
+        โดยทีมเราช่วยจัดเตรียมชิ้นงานและเอกสารประกอบให้พร้อมยื่น
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRICING ══════════ -->
+<section id="price">
+  <div class="wrap">
+    <div class="kicker">Packages</div>
+    <h2>แพ็กเกจรายเดือน</h2>
+    <p class="lead">เลือกตามจังหวะที่คลินิกพร้อม — ทุกแพ็กเกจรวมการวางแผน เขียนแคปชัน และตรวจตามเกณฑ์ สบส. แล้ว</p>
+    <span class="edit-note">✏️ ราคาในหน้านี้เป็นตัวอย่างตั้งต้น — ปรับตามพื้นที่ ระยะทาง และขอบเขตงานจริง</span>
+    <div class="tiers">
+      <div class="tier">
+        <h3>START</h3>
+        <div class="tprice">12,900.-<small>/เดือน</small></div>
+        <div class="tfor">คลินิกที่อยากเริ่มมีตัวตนสม่ำเสมอ</div>
+        <ul>
+          <li>แผนคอนเทนต์รายเดือน (12 โพสต์)</li>
+          <li>วิดีโอสั้น 4 คลิป (ตัดต่อจากฟุตเทจที่คลินิกถ่าย ตามไกด์ของเรา)</li>
+          <li>กราฟิก 4 ชิ้น + เทมเพลตประจำคลินิก</li>
+          <li>แคปชัน + แฮชแท็กทุกโพสต์</li>
+          <li>ตรวจเกณฑ์ สบส. ทุกชิ้น</li>
+          <li>รายงานผลเดือนละครั้ง</li>
+        </ul>
+      </div>
+      <div class="tier hot">
+        <span class="best">คลินิกส่วนใหญ่เลือกอันนี้</span>
+        <h3>GROW</h3>
+        <div class="tprice">24,900.-<small>/เดือน</small></div>
+        <div class="tfor">คลินิกที่อยากให้ทีมเราทำให้จบทั้งระบบ</div>
+        <ul>
+          <li>ทุกอย่างใน START</li>
+          <li><b>เข้าถ่ายถึงคลินิก 1 วัน/เดือน</b> (ได้ฟุตเทจทำได้ทั้งเดือน)</li>
+          <li>วิดีโอสั้น 8 คลิป + กราฟิก 8 ชิ้น</li>
+          <li>ซีรีส์ประจำเพจ 1 รายการ (เช่น "หมอตอบ")</li>
+          <li>ปกวิดีโอ + จัดระเบียบหน้าเพจ</li>
+          <li>คำแนะนำการบูสต์โพสต์รายเดือน</li>
+          <li>รายงานผล 2 ครั้ง/เดือน</li>
+        </ul>
+      </div>
+      <div class="tier">
+        <h3>PARTNER</h3>
+        <div class="tprice">45,900.-<small>/เดือน</small></div>
+        <div class="tfor">คลินิกที่จริงจังกับการโตด้วยคอนเทนต์</div>
+        <ul>
+          <li>ทุกอย่างใน GROW</li>
+          <li>เข้าถ่าย 2 วัน/เดือน + วิดีโอ 12 คลิป</li>
+          <li>ดูแลเพจ + ตารางโพสต์ให้ทั้งหมด</li>
+          <li>แคมเปญครีเอทีฟรายไตรมาส</li>
+          <li>เตรียมเอกสารประกอบยื่นขออนุมัติโฆษณา</li>
+          <li>ประชุมสรุปกลยุทธ์ทุกสัปดาห์</li>
+        </ul>
+      </div>
+    </div>
+    <div class="price-note">
+      <b class="fd">งานชิ้นเดียวก็รับ:</b> ตัดต่อวิดีโอสั้น เริ่มต้น 1,500.-/คลิป · ถ่าย+ตัด เริ่มต้น 4,500.-/คลิป ·
+      กราฟิก 800.-/ชิ้น · ตรวจ+แก้ข้อความให้ถูกเกณฑ์ สบส. 500.-/ชิ้น — เหมาะกับการ "ลองของ" ก่อนตัดสินใจรายเดือน
+      (ค่าโฆษณา/บูสต์โพสต์เป็นงบของคลินิก แยกจากค่าบริการ)
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROCESS ══════════ -->
+<section id="process">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2>เริ่มงานกันยังไง</h2>
+    <div class="steps">
+      <div class="step"><div class="sn">1</div><div><h4>คุยกันก่อน ฟรี <small>วันที่ 1</small></h4><p>โทรหรือนัดเจอ 30 นาที — ฟังเป้าหมาย ดูเพจปัจจุบัน แล้วบอกตรงๆ ว่าอะไรควรทำก่อน</p></div></div>
+      <div class="step"><div class="sn">2</div><div><h4>Content Audit + ใบเสนอราคา <small>ภายใน 3 วัน</small></h4><p>สรุปให้เห็นภาพ: เพจขาดอะไร คู่แข่งทำอะไรอยู่ แผนเดือนแรกหน้าตาเป็นยังไง พร้อมราคาตามขอบเขตจริง</p></div></div>
+      <div class="step"><div class="sn">3</div><div><h4>วางแผนเดือนแรกร่วมกัน <small>สัปดาห์ที่ 1</small></h4><p>เคาะปฏิทิน 12 โพสต์ หัวข้อ ฮุค วันโพสต์ — คุณหมอเห็นทุกอย่างก่อนเริ่มถ่าย</p></div></div>
+      <div class="step"><div class="sn">4</div><div><h4>วันถ่ายที่คลินิก <small>ครึ่งวัน–1 วัน</small></h4><p>ทีมเข้าไปพร้อมอุปกรณ์ กำกับให้พูดง่ายๆ เป็นธรรมชาติ ถ่ายเผื่อทั้งเดือนในวันเดียว — กระทบเวลาตรวจน้อยที่สุด</p></div></div>
+      <div class="step"><div class="sn">5</div><div><h4>ส่งงานให้รีวิวก่อนโพสต์ <small>ทุกสัปดาห์</small></h4><p>ทุกคลิป/ทุกภาพ ส่งให้คุณหมอดูก่อน แก้ได้ 2 รอบต่อชิ้น ผ่านแล้วค่อยโพสต์ตามตาราง</p></div></div>
+      <div class="step"><div class="sn">6</div><div><h4>รายงานผล + ปรับแผน <small>ทุกเดือน</small></h4><p>ตัวเลขจริง: ยอดเห็น ยอดดูจบ ข้อความทัก จำนวนนัดที่มาจากเพจ — แล้วใช้ข้อมูลนั้นวางแผนเดือนถัดไป</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ METRICS ══════════ -->
+<section id="metrics">
+  <div class="wrap">
+    <div class="kicker">Reporting</div>
+    <h2>เราวัดผลด้วยตัวเลขที่มีความหมายกับคลินิก</h2>
+    <div class="metrics">
+      <div class="metric"><div class="mi">👀</div><h5>ยอดเห็น &amp; ดูจบ</h5><p>คอนเทนต์ไปถึงคนแถวคลินิกแค่ไหน และเขาดูจบไหม</p></div>
+      <div class="metric"><div class="mi">💬</div><h5>ข้อความทักเข้า</h5><p>จำนวนแชท/โทรที่เกิดจากคอนเทนต์ในแต่ละเดือน</p></div>
+      <div class="metric"><div class="mi">📅</div><h5>นัดหมายจากเพจ</h5><p>ติดตามว่าโพสต์ไหนพาคนมาถึงการจองจริง</p></div>
+      <div class="metric"><div class="mi">📈</div><h5>การเติบโตของเพจ</h5><p>ผู้ติดตามและการมีส่วนร่วม เทียบเดือนต่อเดือน</p></div>
+    </div>
+    <div class="honest">
+      <b>พูดตรงๆ:</b> เราไม่สัญญายอดไลก์หรือ "ปั้นให้ดัง 7 วัน" — สิ่งที่เราสัญญาได้คือระบบที่สม่ำเสมอ
+      งานที่มีคุณภาพระดับตั้งใจดูแล้วรู้ และการปรับแผนจากข้อมูลจริงทุกเดือน ซึ่งเป็นวิธีเดียวที่เพจคลินิกโตแบบยั่งยืน
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">FAQ</div>
+    <h2>คำถามที่คุณหมอถามบ่อย</h2>
+    <div class="faq">
+      <details>
+        <summary>หมอไม่ถนัดพูดหน้ากล้อง จะทำได้เหรอ?</summary>
+        <div class="a">ได้แน่นอน — เราถามเป็นบทสนทนาแล้วตัดเฉพาะช่วงที่ดี ไม่ต้องท่องสคริปต์ และมีฟอร์แมตที่หมอไม่ต้องออกกล้องเลยก็ได้ เช่น เสียงเล่า + ภาพประกอบ หรือให้ทีมงานเป็นคนดำเนินเรื่อง</div>
+      </details>
+      <details>
+        <summary>ต้องเตรียมอะไรบ้างในวันถ่าย?</summary>
+        <div class="a">แทบไม่ต้องเตรียมอะไร — เราส่งลิสต์คำถาม/หัวข้อให้ล่วงหน้า วันจริงใช้เวลาช่วงพักหรือหลังปิดคลินิก 2-4 ชั่วโมง อุปกรณ์ทีมเรามีครบ</div>
+      </details>
+      <details>
+        <summary>ใครเป็นคนตอบแชทที่ทักเข้ามา?</summary>
+        <div class="a">ทีมคลินิกตอบเอง (เพราะเป็นข้อมูลการรักษา) — แต่เราเตรียม "ชุดคำตอบมาตรฐาน" ที่ถูกเกณฑ์ให้ และแพ็กเกจ PARTNER มีบริการช่วยจัดระเบียบแชทเบื้องต้น</div>
+      </details>
+      <details>
+        <summary>ผูกสัญญากี่เดือน?</summary>
+        <div class="a">แนะนำเริ่มที่ 3 เดือน เพราะคอนเทนต์ต้องการเวลาสะสมกว่าอัลกอริทึมและคนไข้จะจำเพจได้ — แต่ไม่บังคับ ยกเลิกได้โดยแจ้งล่วงหน้า 30 วัน</div>
+      </details>
+      <details>
+        <summary>เรื่องเพลงประกอบและลิขสิทธิ์?</summary>
+        <div class="a">เราใช้เพลงจากคลังลิขสิทธิ์ถูกต้องและคลังเสียงเชิงพาณิชย์ของแพลตฟอร์มเท่านั้น ปลอดภัยทั้งกับเพจและการยิงแอด</div>
+      </details>
+      <details>
+        <summary>ถ้าโดนตรวจสอบเรื่องโฆษณาขึ้นมาจริงๆ?</summary>
+        <div class="a">งานทุกชิ้นเราออกแบบให้อยู่ฝั่งปลอดภัยตั้งแต่ต้น (เน้นให้ความรู้ ไม่อวดอ้าง) ชิ้นที่เข้าข่ายโฆษณาเราจะแจ้งชัดว่าควรยื่นขออนุมัติก่อน พร้อมเตรียมไฟล์และข้อความให้ยื่นได้ทันที — และเราเก็บบันทึกทุกเวอร์ชันไว้ให้ตรวจย้อนหลังได้</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section id="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>เริ่มจากของฟรีก่อน</h2>
+      <p>
+        ส่งชื่อเพจคลินิกของคุณมา เราจะทำ <span class="free">Content Audit ฟรี 1 ชุด</span> —
+        บอกตรงๆ ว่าตอนนี้เพจขาดอะไร คู่แข่งรอบตัวทำอะไรอยู่ และ 3 คอนเทนต์แรกที่ควรทำคืออะไร<br />
+        ไม่มีข้อผูกมัด ไม่ต้องซื้ออะไรก่อน
+      </p>
+      <div class="cta-contact">
+        <span data-f="line">LINE: @savesound</span>
+        <span data-f="phone">โทร: 08x-xxx-xxxx</span>
+        <span class="fm" data-f="email">hello@savesound.example</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-f="name">SAVESOUND PRODUCTION</span> · CONTENT THAT MAKES PATIENTS CHOOSE YOU
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════
+   แก้ข้อมูลติดต่อทั้งหน้า — แก้ที่เดียวตรงนี้พอ
+   ═══════════════════════════════════════════ */
+var CONFIG = {
+  name: "SAVESOUND PRODUCTION",           // ชื่อทีม/บริษัทของคุณ
+  line: "LINE: @savesound",                // ไลน์
+  phone: "โทร: 08x-xxx-xxxx",              // เบอร์โทร
+  email: "hello@savesound.example",        // อีเมล (ลบได้ถ้าไม่ใช้)
+  contactShort: "LINE @savesound · 08x-xxx-xxxx",
+};
+Object.keys(CONFIG).forEach(function (k) {
+  document.querySelectorAll('[data-f="' + k + '"]').forEach(function (el) {
+    el.textContent = CONFIG[k];
+  });
+});
+</script>
+</body>
+</html>

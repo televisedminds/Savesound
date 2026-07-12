@@ -1,0 +1,7 @@
+{
+  "name": "sapsound-studio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "เสพซาวด์ STUDIO v2 — content command center: story engine, creative lab, scripts, cut plans, cover design, publish packs, planner, results strategist, and a client studio for the production house."
+}
